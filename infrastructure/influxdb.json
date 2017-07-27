@@ -4,11 +4,11 @@
     "ImageId": {
       "Description": "The AMI to use for this component",
       "Type": "String",
-      "Default": "ami-bff32ccc"
+      "Default": "ami-d7b9a2b1"
     },
     "InstanceType": {
       "Description": "The size of the EC2 instances",
-      "Default": "c4.large",
+      "Default": "t2.medium",
       "Type": "String"
     },
     "VpcId": {
