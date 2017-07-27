@@ -8,7 +8,7 @@
     },
     "InstanceType": {
       "Description": "The size of the EC2 instances",
-      "Default": "t2.medium",
+      "Default": "c4.large",
       "Type": "String"
     },
     "VpcId": {
