@@ -7,6 +7,10 @@ Current versions:
 * Influxdb: 1.3.1
 * Chronograph: 1.3.5
 
+`Warning!`
+Current implementation requires health chenck on Chronograph, not on the IfluxDb.
+You will have to install Chronograph to make this setup work. [See Chronograph] (#Install-Chronograph)
+
 ## AWS Setup
 
 #### Notes
@@ -36,8 +40,15 @@ curl -XPOST http://<hostname>:8086/query --data-urlencode "q=CREATE USER <userna
  ```
 ## Management interface
 
-The web interface will be found at your load balancer URL with the API found on port 8086.  Enter the following credentials to gain access to the web interface.
-```ruby
-USERNAME : admin  
-PASSWORD : admin  
+From version 1.3 of InfluxDb you will have to install Chronograph to do administration. Script for this will follow...
+
+### Install-Chronograph
+For now do this:
+
+ssh to your host
 ```
+wget https://dl.influxdata.com/chronograf/releases/chronograf-1.3.5.0.x86_64.rpm
+sudo yum localinstall chronograf-1.3.5.0.x86_64.rpm
+```
+#### Verify
+http://hostname/
