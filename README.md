@@ -3,6 +3,10 @@
   <b>InfluxDB</b> is an open-source, distributed, time series database with no external dependencies.  
 </p>
 
+Current versions:
+* Influxdb: 1.3.1
+* Chronograph: 1.3.5
+
 ## AWS Setup
 
 #### Notes
@@ -15,7 +19,22 @@ There is a example config included in this repo.
 
 This template will create 2 EBS volumes, the first will become the root device for the database, the second will be a small device for the WAL.
 
-#### Management interface
+## Authentiacation and Authorization
+
+### Admin user
+
+Create the first admin user
+```
+curl -XPOST http://<hostname>:8086/query --data-urlencode "q=CREATE USER <username> WITH PASSWORD '<pwd>' WITH ALL PRIVILEGES"
+```
+
+
+
+## Configuration
+```
+ sudo vi /etc/influxdb/influxdb.conf
+ ```
+## Management interface
 
 The web interface will be found at your load balancer URL with the API found on port 8086.  Enter the following credentials to gain access to the web interface.
 ```ruby
