@@ -26,7 +26,7 @@
     },
     "ConfigURL": {
       "Description": "The URL for the influxdb.conf file",
-      "Default": "https://raw.githubusercontent.com/baardl/influxdb-aws/master/influxdb.conf",
+      "Default": "https://raw.githubusercontent.com/baardl/influxdb-aws/master/influxdb-1.3.conf",
       "Type": "String"
     }
   },
