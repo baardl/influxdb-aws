@@ -9,7 +9,7 @@ Current versions:
 
 `Warning!`
 Current implementation requires health chenck on Chronograph, not on the IfluxDb.
-You will have to install Chronograph to make this setup work. [See Chronograph] (#Install-Chronograph)
+You will have to install Chronograph to make this setup work. [See Chronograph](#Install-Chronograph)
 
 ## AWS Setup
 
